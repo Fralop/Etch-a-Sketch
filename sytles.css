@@ -8,10 +8,10 @@ body {
     
 }
 .container {
-    min-height: 100vh;
+    min-height: 92.8vh;
     display: flex;
     flex-direction: column;
-    border: 2px solid red;
+    border: 0.5px solid #800020;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
@@ -21,7 +21,7 @@ body {
 .row {
     display: flex;
     flex-direction: row;
-    border: 2px solid darkblue;
+    border: 0.5px solid #800020;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
@@ -29,10 +29,21 @@ body {
 }
 
 .column {
-    border: 2px solid darkgreen;
+    border-left: 0.5px solid #800020;
+    border-right: 0.5px solid #800020;
     flex: 1 1 auto;
 }
 
 .over  {
-    background-color: aqua;
+    background-color: #800020;
+}
+
+button {
+    display: block;
+    margin: 0 auto 3px auto;
+}
+
+h2 {
+    text-align: center;
+    margin: 3px;
 }
