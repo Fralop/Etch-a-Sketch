@@ -55,10 +55,14 @@ function paintEffect() {
 //    e.target.classList.add('over');
 //} 
 
+// Function with opacity 10% increments
+let o = 0;
 function hoverColorEffect(e) {
     let r = Math.floor(Math.random()*256);
     let g = Math.floor(Math.random()*256);
     let b = Math.floor(Math.random()*256);
-    let o = 0.2; 
+    if (o<0.9) {
+    o += 0.1; 
+    } else o = 0;
     e.target.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${o})`;
 } 
