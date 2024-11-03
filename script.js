@@ -46,10 +46,18 @@ function createGrid (x) {
 function paintEffect() {
     const divs = document.querySelectorAll('.column');
     divs.forEach((div) => {
-        div.addEventListener('mouseover', hoverEffect);
+        div.addEventListener('mouseover', hoverColorEffect);
     });
 }
 
-function hoverEffect(e) {
-    e.target.classList.add('over');
+//Over effect using one color defined in CSS file.
+//function hoverEffect(e) {
+//    e.target.classList.add('over');
+//} 
+
+function hoverColorEffect(e) {
+    let r = 255;
+    let g = 100;
+    let b = 150;
+    e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 } 
