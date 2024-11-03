@@ -56,8 +56,8 @@ function paintEffect() {
 //} 
 
 function hoverColorEffect(e) {
-    let r = 255;
-    let g = 100;
-    let b = 150;
+    let r = Math.floor(Math.random()*256);
+    let g = Math.floor(Math.random()*256);
+    let b = Math.floor(Math.random()*256);
     e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
 } 
